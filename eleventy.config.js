@@ -22,6 +22,11 @@ module.exports = function (eleventyConfig) {
     pluginRss.getNewestCollectionItemDate
   );
 
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_separator: "<!-- excerpt -->",
+  });
+
   // Run Eleventy when these files change:
   // https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 

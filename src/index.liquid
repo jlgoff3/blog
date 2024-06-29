@@ -7,7 +7,7 @@ layout: layouts/default.liquid
     <h2>Latest</h2>
     {% assign posts = collections.posts %}
     {% assign count = 1 %}
-    {% include "postlist.liquid" %}
+    {% include "postsummary.liquid" %}
   </section>
 
   {% assign tagList = collections | postTags %} {% if tagList.length > 0 %}
